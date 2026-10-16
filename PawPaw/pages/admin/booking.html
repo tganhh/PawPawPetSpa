@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawPaw - Quản lý lịch hẹn</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/admin.css');
+    </style>
+</head>
+
+<body data-admin-page="booking">
+
+    <!-- HEADER ADMIN -->
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container admin-page-container">
+        <!-- Tiêu đề -->
+        <section class="admin-user-header" style="margin-bottom: 24px;">
+            <h1 class="page-title">Quản lý lịch hẹn</h1>
+            <p>Quản lý danh sách và kiểm tra thông tin lịch hẹn chăm sóc thú cưng.</p>
+        </section>
+
+        <!-- Bộ lọc -->
+        <section class="admin-panel">
+            <div class="filter-grid">
+                <div class="form-group">
+                    <label for="filter-keyword">Tìm kiếm</label>
+                    <input type="text" id="filter-keyword" placeholder="Mã LH, khách hàng, SĐT...">
+                </div>
+
+                <div class="form-group">
+                    <label for="filter-status">Trạng thái</label>
+                    <select id="filter-status">
+                        <option value="">Tất cả trạng thái</option>
+                        <option value="sap_dien_ra">Sắp diễn ra</option>
+                        <option value="dang_dien_ra">Đang diễn ra</option>
+                        <option value="da_hoan_thanh">Đã hoàn thành</option>
+                        <option value="da_huy">Đã huỷ</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Khoảng thời gian hẹn</label>
+                    <div class="date-inputs">
+                        <input type="date" id="filter-date-from" aria-label="Từ ngày">
+                        <span class="date-separator">đến</span>
+                        <input type="date" id="filter-date-to" aria-label="Đến ngày">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phím tắt nhanh + Nút Đặt lại -->
+            <div class="filter-actions-row">
+                <div class="quick-date-chips">
+                    <span class="chip-label">Chọn nhanh:</span>
+                    <button type="button" class="btn-chip" data-range="today">Hôm nay</button>
+                    <button type="button" class="btn-chip" data-range="7days">7 ngày qua</button>
+                    <button type="button" class="btn-chip" data-range="30days">30 ngày qua</button>
+                    <button type="button" class="btn-chip" data-range="this_month">Tháng này</button>
+                </div>
+
+                <button type="button" id="btn-reset" class="btn btn-reset-custom">
+                    ↺ Đặt lại
+                </button>
+            </div>
+        </section>
+
+        <!-- Danh sách bảng -->
+        <section class="admin-panel">
+            <div class="table-responsive">
+                <table class="table-booking">
+                    <thead>
+                        <tr>
+                            <th>Mã LH</th>
+                            <th>Khách hàng</th>
+                            <th>Số điện thoại</th>
+                            <th>Thời gian</th>
+                            <th>Dịch vụ & Thú cưng</th>
+                            <th>Tổng tiền</th>
+                            <th class="col-center">Trạng thái</th>
+                            <th style="text-align: right;">Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="booking-tbody"></tbody>
+                </table>
+            </div>
+
+            <!-- Phân trang (20 dòng / trang) -->
+            <div class="pagination-bar" id="booking-pagination"></div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+
+    <!-- MODAL CHI TIẾT -->
+    <div class="modal-overlay" id="modal-detail">
+        <div class="modal-box">
+            <div class="modal-box-header">
+                <h3 style="color: var(--blue-dark); font-weight: 900; margin: 0;">Chi Tiết Đơn Đặt Lịch</h3>
+                <button type="button" id="btn-close-modal" aria-label="Đóng">&times;</button>
+            </div>
+            <div id="modal-detail-content"></div>
+        </div>
+    </div>
+
+    <!-- UTIL -->
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/util/pagination.js"></script>
+
+    <!-- COMPONENTS -->
+    <script src="../../js/component/header-admin.js"></script>
+    <script src="../../js/component/footer.js"></script>
+
+    <!-- ADMIN SCRIPT -->
+    <script src="../../js/admin/booking.js"></script>
+
+</body>
+</html>

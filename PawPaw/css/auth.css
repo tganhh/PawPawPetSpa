@@ -1,0 +1,201 @@
+/* =========================================================
+   css/auth.css
+   Dùng cho: pages/auth/login.html, pages/auth/register.html
+   Load sau style.css
+   ========================================================= */
+
+body:has(.auth-page) {
+    min-height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.auth-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 40px 7%;
+
+    background-color: transparent;
+
+    overflow-y: auto;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 460px;
+
+    background-color: rgba(255, 255, 255, 0.97);
+
+    padding: 40px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.auth-content {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER AUTH
+   ========================================================= */
+
+.auth-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.auth-title {
+    color: var(--blue-dark);
+
+    font-size: 30px;
+    font-weight: 900;
+
+    margin-bottom: 18px;
+}
+
+/* Logo hình */
+.auth-logo {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+    display: block;
+
+    margin: 0 auto 8px;
+}
+
+/* Chữ PawPaw */
+.auth-brand {
+    width: 180px;
+    height: auto;
+
+    object-fit: contain;
+    display: block;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   FORM (phần riêng của auth; .form-group nằm ở style.css)
+   ========================================================= */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* =========================================================
+   THÔNG BÁO LỖI
+   ========================================================= */
+
+.form-error {
+    min-height: 17px;
+
+    color: #d9534f;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-message {
+    min-height: 20px;
+
+    margin-top: 2px;
+
+    text-align: center;
+
+    color: #d9534f;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.auth-submit {
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   LINK LOGIN / REGISTER
+   ========================================================= */
+
+.auth-footer {
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: var(--purple-gray);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.auth-footer a {
+    color: var(--blue-dark);
+
+    font-weight: 800;
+}
+
+.auth-footer a:hover {
+    color: var(--blue-pastel);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .auth-page {
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 25px 15px;
+    }
+
+    .auth-container {
+        max-width: 480px;
+
+        padding: 30px 20px;
+
+        margin: 20px 0;
+    }
+
+    .auth-title {
+        font-size: 26px;
+    }
+
+    .auth-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .auth-brand {
+        width: 180px;
+    }
+}

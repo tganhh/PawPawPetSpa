@@ -1,0 +1,1009 @@
+/* =========================================================
+   css/customer.css
+   Dùng cho: pages/customer/*  (load sau style.css)
+   ========================================================= */
+
+/* =========================================================
+   1. DỊCH VỤ: DANH SÁCH (service.html)
+   ========================================================= */
+.service-page,
+.service-detail-page,
+.service-filter-page {
+    margin: 40px auto 70px;
+}
+
+.service-header { margin-bottom: 25px; }
+
+.service-header .page-text {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.service-toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.service-search {
+    position: relative;
+    flex: 1;
+    min-width: 240px;
+}
+
+.service-search input {
+    width: 100%;
+    padding: 12px 52px 12px 16px;
+    border: 1px solid var(--blue-light);
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--text-main);
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.service-search input:focus {
+    border-color: var(--blue-dark);
+    box-shadow: 0 0 0 3px rgba(105, 130, 213, 0.12);
+}
+
+.service-search-button {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.service-search-button:hover { background-color: var(--blue-light); }
+
+.service-search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.service-filter-btn { white-space: nowrap; }
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.service-empty {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--purple-gray);
+    font-weight: 700;
+    background-color: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+#service-empty,
+#service-detail-empty,
+#filtered-service-list,
+#filtered-service-empty {
+    display: none;
+}
+
+/* Các class bổ sung cho Service Card */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-card-image,
+.service-card-placeholder {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-light);
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.service-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.service-card-group {
+    font-size: 12px;
+    color: #f06292;
+    font-weight: 800;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.service-card-content h2 {
+    font-size: 18px;
+    color: var(--blue-dark);
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.service-card-price-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.service-card-price-value {
+    font-weight: 800;
+    color: #e91e63;
+    font-size: 15px;
+}
+
+.service-card-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+/* =========================================================
+   2. DỊCH VỤ: CHI TIẾT (service-detail.html)
+   ========================================================= */
+.service-detail-section {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.service-detail-actions {
+    max-width: 820px;
+    margin: 25px auto 0;
+}
+
+/* Card chi tiết dịch vụ */
+.service-detail-card {
+    background-color: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-detail-image img,
+.service-detail-image-placeholder {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.service-detail-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-light);
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.service-detail-content {
+    padding: 30px;
+}
+
+.service-detail-group {
+    font-size: 14px;
+    color: #f06292;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.service-detail-content h1 {
+    font-size: 28px;
+    color: var(--blue-dark);
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.service-detail-description {
+    color: var(--text-main);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.service-detail-info {
+    margin-bottom: 25px;
+}
+
+.service-detail-info-item {
+    font-size: 15px;
+    color: var(--purple-gray);
+}
+
+.service-detail-info-item strong {
+    color: var(--text-main);
+    font-weight: 800;
+}
+
+.service-price-section h2 {
+    font-size: 20px;
+    color: var(--blue-dark);
+    font-weight: 900;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--pink-light);
+}
+
+.service-price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--blue-light);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.service-price-item:last-child {
+    border-bottom: none;
+}
+
+.service-price-item span:last-child {
+    color: #e91e63;
+    font-weight: 900;
+}
+
+/* Đánh giá của khách hàng */
+.service-review-section {
+    display: none; 
+    max-width: 820px;
+    margin: 30px auto 20px;
+    padding: 26px 28px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-review-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--pink-light);
+}
+
+.service-review-title {
+    color: var(--blue-dark);
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.service-review-summary {
+    color: var(--purple-gray);
+    font-weight: 700;
+}
+
+.service-review-avg {
+    color: #e91e63;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.service-review-count { font-size: 14px; }
+
+.service-review-item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--blue-light);
+}
+
+.service-review-item:last-child { border-bottom: none; }
+
+.service-review-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service-review-name {
+    color: var(--text-main);
+    font-weight: 800;
+}
+
+.service-review-time {
+    color: var(--purple-gray);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.service-review-rating { margin: 4px 0; }
+
+.service-review-label {
+    color: var(--purple-gray);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.service-review-content {
+    color: var(--text-main);
+    font-weight: 600;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.service-review-empty {
+    padding: 20px 0;
+    text-align: center;
+    color: var(--purple-gray);
+    font-weight: 700;
+}
+
+/* =========================================================
+   3. DỊCH VỤ: BỘ LỌC (service-filter.html)
+   ========================================================= */
+.service-filter-box {
+    margin-bottom: 25px;
+    padding: 28px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-filter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.service-filter-item,
+.service-filter-search {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.service-filter-item label,
+.service-filter-search label {
+    color: var(--purple-gray);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.service-filter-item select,
+.service-filter-search input {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid var(--blue-light);
+    border-radius: 8px;
+    background-color: var(--white);
+    color: var(--text-main);
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.service-filter-item select { cursor: pointer; }
+
+.service-filter-item select:focus,
+.service-filter-search input:focus {
+    border-color: var(--blue-dark);
+    box-shadow: 0 0 0 3px rgba(105, 130, 213, 0.12);
+}
+
+.service-filter-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+/* =========================================================
+   4. THÚ CƯNG (pet.html, pet-detail.html)
+   ========================================================= */
+.pet-page-title { margin-bottom: 0; }
+
+
+/* =========================================================
+   5. ĐẶT LỊCH (booking.html)
+   ========================================================= */
+
+.booking-page {
+    max-width: 1200px;
+    margin: 40px auto 70px;
+}
+
+/* Card chính */
+.booking-card {
+    margin-bottom: 25px;
+    padding: 35px;
+    background-color: var(--white);
+    border: 1px solid rgba(193, 207, 230, 0.55);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Tiêu đề từng phần */
+.booking-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--pink-light);
+    color: var(--blue-dark);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Danh sách các nhóm thú cưng */
+#pet-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card của từng thú cưng
+   Class này khớp với booking.js */
+.pet-item-card {
+    min-width: 0;
+    margin: 0;
+    padding: 22px;
+    background: #fafbff;
+    border: 1px solid var(--blue-light);
+    border-radius: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.pet-item-card:hover {
+    border-color: var(--blue-dark);
+}
+
+/* Header của nhóm thú cưng */
+.booking-pet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.booking-pet-title {
+    color: var(--purple-gray);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* Nút xóa nhóm thú cưng */
+.pet-item-card .btn-remove-pet {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+/* Khu vực chọn thú cưng */
+.pet-item-card > .form-group {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.pet-item-card .pet-select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Khu vực dịch vụ */
+.pet-services-wrapper {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.pet-services-wrapper .service-error {
+    display: block;
+    margin-top: 8px;
+}
+
+/* Lưới dịch vụ
+   Dùng đúng class được tạo trong booking.js */
+.pet-item-card .service-checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    margin-top: 0;
+}
+
+/* Mỗi dịch vụ hiển thị trong một ô riêng */
+.pet-item-card .service-checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 0;
+    margin: 0;
+    padding: 13px;
+    background: var(--white);
+    border: 1px solid #e1e7f0;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.pet-item-card .service-checkbox-label:hover {
+    border-color: var(--blue-dark);
+    background-color: #f6f8fd;
+}
+
+/* Checkbox */
+.pet-item-card .service-checkbox-label input[type="checkbox"] {
+    flex: 0 0 17px;
+    width: 17px;
+    height: 17px;
+    margin: 4px 0 0;
+    accent-color: var(--blue-dark);
+    cursor: pointer;
+}
+
+/* Tên dịch vụ và giá */
+.pet-item-card .service-checkbox-label span {
+    flex: 1;
+    min-width: 0;
+    color: var(--text-main);
+    font-size: 14px;
+    font-weight: 600;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* Thông báo lỗi chọn thú cưng */
+.booking-pet-error {
+    margin-top: 10px;
+}
+
+/* Thời lượng dự kiến */
+.booking-duration {
+    color: var(--blue-dark);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* Chọn ngày và giờ */
+.booking-time-group {
+    margin-top: 15px;
+}
+
+.booking-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.booking-slots > .helper-text,
+.booking-slot-placeholder {
+    grid-column: 1 / -1;
+    padding: 15px 0;
+}
+
+/* Khung giờ được tạo bằng booking.js: .slot-pill */
+.booking-slots .slot-pill {
+    padding: 11px 8px;
+    border: 1.5px solid var(--blue-light);
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--text-main);
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.booking-slots .slot-pill:hover:not(.disabled) {
+    border-color: var(--blue-dark);
+    background-color: #f0f4ff;
+    color: var(--blue-dark);
+}
+
+.booking-slots .slot-pill.active {
+    background-color: var(--blue-dark);
+    border-color: var(--blue-dark);
+    color: var(--white);
+}
+
+.booking-slots .slot-pill.disabled {
+    background-color: #f1f1f1;
+    border-color: #e0e0e0;
+    color: #aaa;
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+.booking-slot-error {
+    margin-top: 8px;
+}
+
+/* Ghi chú */
+.booking-note-group {
+    margin-bottom: 20px;
+}
+
+.booking-note-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Tổng kết đặt lịch */
+.booking-summary {
+    padding: 20px;
+    background-color: #f6f8fd;
+    border: 1px dashed var(--blue-pastel);
+    border-radius: 14px;
+}
+
+.booking-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 0;
+    color: var(--purple-gray);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.booking-summary-row > span:last-child {
+    text-align: right;
+}
+
+.booking-summary-row.total {
+    margin-top: 8px;
+    padding-top: 12px;
+    border-top: 1.5px solid var(--blue-light);
+    color: var(--blue-dark);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Nút xác nhận */
+.booking-submit-wrapper {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.booking-submit-button {
+    padding: 13px 36px;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .booking-page {
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+
+    .booking-card {
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    .booking-section-heading {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    .pet-item-card {
+        padding: 16px;
+    }
+
+    .pet-item-card .service-checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-summary-row {
+        font-size: 14px;
+    }
+
+    .booking-summary-row.total {
+        font-size: 17px;
+    }
+
+    .booking-submit-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-card {
+        padding: 18px 14px;
+    }
+
+    .booking-pet-header {
+        gap: 8px;
+    }
+
+    .pet-item-card .service-checkbox-label {
+        padding: 11px;
+    }
+
+    .booking-slots {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================================================
+   6. LỊCH ĐÃ ĐẶT (my-booking.html)
+   ========================================================= */
+.mybk-page {
+    max-width: 900px;
+    margin: 40px auto 70px;
+}
+
+.mybk-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 22px;
+    padding: 18px 22px;
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mybk-filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mybk-filter-group label {
+    color: var(--purple-gray);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.mybk-filter-group select {
+    padding: 8px 12px;
+    border: 1.5px solid var(--blue-light);
+    border-radius: 8px;
+    background: var(--white);
+    color: var(--text-main);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.mybk-result-count {
+    color: var(--purple-gray);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.mybk-item {
+    margin-bottom: 18px;
+    padding: 24px 28px;
+    background-color: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mybk-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--pink-light);
+}
+
+.mybk-code {
+    color: var(--blue-dark);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.mybk-datetime {
+    margin-top: 2px;
+    color: var(--purple-gray);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.mybk-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px 24px;
+    color: var(--text-main);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mybk-label {
+    color: var(--purple-gray);
+    font-weight: 800;
+}
+
+.mybk-total {
+    color: var(--blue-dark);
+    font-weight: 900;
+}
+
+.mybk-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.mybk-action-note {
+    flex-basis: 100%;
+    color: #e53935;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.mybk-reviewed-tag {
+    color: #2e7d32;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.mybk-detail-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mybk-detail-pet {
+    margin-top: 12px;
+    padding: 12px 14px;
+    background: #fafbff;
+    border: 1px solid var(--blue-light);
+    border-radius: 12px;
+}
+
+.mybk-detail-pet-name {
+    margin-bottom: 6px;
+    color: var(--purple-gray);
+    font-weight: 900;
+}
+
+.mybk-detail-review-content {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.mybk-detail-empty-text {
+    margin-top: 12px;
+}
+
+.mybk-detail-total {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1.5px solid var(--blue-light);
+    color: var(--blue-dark);
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.mybk-review-info { margin-bottom: 4px; }
+
+.star-picker {
+    display: flex;
+    gap: 6px;
+    margin: 8px 0 4px;
+}
+
+.star-btn {
+    padding: 0 2px;
+    border: none;
+    background: none;
+    color: #d5d5d5;
+    font-size: 34px;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.star-btn:hover { transform: scale(1.15); }
+.star-btn.on { color: var(--star); }
+
+.mybk-review-form .form-group { margin-top: 14px; }
+
+/* =========================================================
+   7. HỒ SƠ (profile.html)
+   ========================================================= */
+.profile-file-input { display: none; }
+
+.profile-title {
+    margin-bottom: 5px;
+    color: var(--blue-dark);
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.profile-subtitle {
+    color: var(--purple-gray);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.profile-btn-back { flex: 1; }
+.profile-btn-save { flex: 2; }
+
+/* =========================================================
+   8. RESPONSIVE
+   ========================================================= */
+@media (max-width: 768px) {
+    .booking-page { margin: 24px auto 40px; }
+    .booking-card { padding: 20px; }
+
+    .booking-section-heading {
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 17px;
+    }
+
+    .booking-svc-grid { grid-template-columns: 1fr; }
+    .booking-submit-button { width: 100%; }
+
+    .service-toolbar { flex-direction: column; align-items: stretch; }
+    .service-filter-box { padding: 20px; }
+    .mybk-item { padding: 20px; }
+}

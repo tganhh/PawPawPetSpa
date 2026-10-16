@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPaw - Quản trị dịch vụ</title>
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/admin.css');
+    </style>
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/auth/auth-guard.js"></script>
+    <script>
+        if (typeof requireLogin === "function") requireLogin(VAI_TRO.QUAN_LY);
+        else if (typeof AuthGuard !== "undefined" && AuthGuard.requireLogin) AuthGuard.requireLogin(VAI_TRO.QUAN_LY);
+    </script>
+</head>
+<body data-page="service">
+    <header class="header">
+        <div class="container navbar"></div>
+    </header>
+    <main class="container admin-page" style="margin: 35px auto 60px;">
+        <div class="page-header-row">
+            <h1 class="page-title" style="margin-bottom:0;">Quản trị dịch vụ (<span id="service-count">0</span>)</h1>
+            <a class="btn btn-primary" href="service-update.html">+ Thêm dịch vụ</a>
+        </div>
+        <div class="review-filter-bar">
+            <div class="review-filter-group" style="flex: 1; min-width: 250px;">
+                <label for="service-search">Tìm kiếm dịch vụ</label>
+                <input type="search" id="service-search" class="admin-service-search" placeholder="Nhập tên hoặc mã dịch vụ..." autocomplete="off">
+            </div>
+            <div class="review-filter-group">
+                <label for="service-group-filter">Lọc theo nhóm</label>
+                <select id="service-group-filter">
+                    <option value="">Tất cả nhóm</option>
+                </select>
+            </div>
+        </div>
+        <div class="review-table-wrap">
+            <table class="review-table">
+                <thead>
+                    <tr>
+                        <th>Ảnh</th>
+                        <th>Mã</th>
+                        <th>Tên dịch vụ</th>
+                        <th>Nhóm</th>
+                        <th>Dưới 5kg</th>
+                        <th>5&#45;15kg</th>
+                        <th>Trên 15kg</th>
+                        <th>Thời gian</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="service-table-body"></tbody>
+            </table>
+        </div>
+    </main>
+
+<!-- FOOTER -->
+    <footer class="footer"></footer>
+
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/util/validation.js"></script>
+    <script src="../../js/component/header-admin.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <script src="../../js/admin/service.js"></script>
+</body>
+</html>

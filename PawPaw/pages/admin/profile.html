@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông tin tài khoản quản lý - PawPaw</title>
+
+  <style>
+        @import url('../../style.css');
+        @import url('../../css/admin.css');
+  </style>
+</head>
+
+<body data-page="profile" data-admin-page="profile">
+
+  <!-- HEADER ADMIN -->
+  <header class="header">
+    <nav class="container navbar"></nav>
+  </header>
+
+  <!-- NỘI DUNG PROFILE -->
+  <main class="profile-section">
+    <div class="container">
+      <div class="profile-card">
+
+        <div class="profile-header">
+          <div
+            class="avatar-wrapper"
+            id="avatarWrapper"
+            title="Nhấn để đổi ảnh đại diện"
+          >
+            <img
+              id="avatarPreview"
+              src="https://ui-avatars.com/api/?name=Admin&background=806E83&color=fff"
+              alt="Ảnh đại diện quản lý"
+              class="profile-avatar-preview"
+            >
+            <span class="avatar-badge">📷</span>
+          </div>
+
+          <!-- Input chọn ảnh đại diện -->
+          <input
+            type="file"
+            id="avatarFileInput"
+            accept="image/*"
+            style="display: none;"
+          >
+
+          <h2 class="auth-title" style="margin-bottom: 5px;">
+            Hồ sơ quản lý
+          </h2>
+
+          <p style="color: var(--purple-gray); font-weight: 600; font-size: 14px;">
+            Quản lý và cập nhật thông tin tài khoản quản trị PawPaw
+          </p>
+        </div>
+
+        <!-- Thông báo -->
+        <div id="alertSuccess" class="alert-success-box">
+          Cập nhật thông tin thành công!
+        </div>
+
+        <div
+          id="formGeneralError"
+          class="form-message"
+          style="display: none;"
+        ></div>
+
+        <!-- FORM PROFILE -->
+        <form id="profileForm" class="auth-form" novalidate>
+
+          <div class="form-group">
+            <label for="email">Địa chỉ Email</label>
+            <input type="email" id="email" disabled>
+          </div>
+
+          <div class="form-group">
+            <label for="hoTen">Họ và tên *</label>
+            <input
+              type="text"
+              id="hoTen"
+              name="ho_ten"
+              placeholder="Nhập họ và tên"
+            >
+            <small class="error-message form-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="soDienThoai">Số điện thoại *</label>
+            <input
+              type="tel"
+              id="soDienThoai"
+              name="so_dien_thoai"
+              placeholder="Ví dụ: 0912345678"
+            >
+            <small class="error-message form-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="diaChi">Địa chỉ</label>
+            <input
+              type="text"
+              id="diaChi"
+              name="dia_chi"
+              placeholder="Nhập địa chỉ của bạn"
+            >
+            <small class="error-message form-error"></small>
+          </div>
+
+          <!-- Nút thao tác -->
+          <div style="display: flex; gap: 12px; margin-top: 15px;">
+            <button
+              type="button"
+              id="btnBack"
+              class="btn btn-secondary"
+              style="flex: 1;"
+            >
+              Quay lại
+            </button>
+
+            <button
+              type="submit"
+              class="btn btn-primary auth-submit"
+              style="flex: 2; margin-top: 0;"
+            >
+              Lưu thay đổi
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer"></footer>
+
+  <!-- Scripts dùng chung -->
+  <script src="../../js/util/constants.js"></script>
+  <script src="../../js/util/storage.js"></script>
+  <script src="../../js/util/validation.js"></script>
+  <script src="../../js/auth/auth-guard.js"></script>
+
+  <!-- Component dành cho admin -->
+  <script src="../../js/component/header-admin.js"></script>
+  <script src="../../js/component/footer.js"></script>
+
+  <!-- Logic profile admin -->
+  <script src="../../js/admin/profile.js"></script>
+
+</body>
+</html>

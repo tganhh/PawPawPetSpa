@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin tài khoản - PawPaw</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/customer.css');
+        @import url('../../css/chatbot.css');
+    </style>
+</head>
+
+<body data-page="profile">
+
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <main class="profile-section">
+        <div class="container">
+            <div class="profile-card">
+
+                <div class="profile-header">
+                    <div class="avatar-wrapper" id="avatarWrapper" title="Nhấn để đổi ảnh đại diện">
+                        <img
+                            id="avatarPreview"
+                            class="profile-avatar-preview"
+                            src="https://ui-avatars.com/api/?name=User&background=99B4DA&color=fff"
+                            alt="Avatar">
+                        <span class="avatar-badge">📷</span>
+                    </div>
+
+                    <input type="file" id="avatarFileInput" class="profile-file-input" accept="image/*">
+
+                    <h2 class="profile-title">Hồ sơ cá nhân</h2>
+                    <p class="profile-subtitle">Quản lý và cập nhật thông tin tài khoản của bạn</p>
+                </div>
+
+                <div id="alertSuccess" class="alert-success-box">Cập nhật thông tin thành công!</div>
+                <div id="formGeneralError" class="alert-error-box"></div>
+
+                <form id="profileForm" class="form-stack" novalidate>
+
+                    <div class="form-group">
+                        <label for="email">Địa chỉ Email</label>
+                        <input type="email" id="email" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hoTen">Họ và tên *</label>
+                        <input type="text" id="hoTen" name="ho_ten" placeholder="Nhập họ và tên">
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="soDienThoai">Số điện thoại *</label>
+                        <input type="tel" id="soDienThoai" name="so_dien_thoai" placeholder="Ví dụ: 0912345678">
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="diaChi">Địa chỉ</label>
+                        <input type="text" id="diaChi" name="dia_chi" placeholder="Nhập địa chỉ của bạn">
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="profile-actions">
+                        <button type="button" id="btnBack" class="btn btn-secondary profile-btn-back">Quay lại</button>
+                        <button type="submit" class="btn btn-primary profile-btn-save">Lưu thay đổi</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/validation.js"></script>
+    <script src="../../js/auth/auth-guard.js"></script>
+    <script src="../../js/component/header.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <script src="../../js/customer/profile.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/component/chatbot.js"></script>
+
+</body>
+
+</html>

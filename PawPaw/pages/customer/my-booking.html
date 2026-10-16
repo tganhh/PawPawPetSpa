@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch đã đặt - PawPaw</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/customer.css');
+        @import url('../../css/chatbot.css');
+    </style>
+</head>
+
+<body data-page="my-booking">
+
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <main class="container mybk-page">
+
+        <div class="page-header-row">
+            <div>
+                <h1 class="page-title">Lịch Đã Đặt</h1>
+                <p>Theo dõi trạng thái, hủy lịch và đánh giá dịch vụ</p>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">+ Đặt lịch mới</a>
+        </div>
+
+        <!-- Bộ lọc -->
+        <div class="mybk-filter-bar">
+            <div class="mybk-filter-group">
+                <label for="filter-status">Trạng thái:</label>
+                <select id="filter-status">
+                    <option value="all">Tất cả</option>
+                    <option value="sap_dien_ra">Sắp diễn ra</option>
+                    <option value="dang_dien_ra">Đang diễn ra</option>
+                    <option value="da_hoan_thanh">Đã hoàn thành</option>
+                    <option value="da_huy">Đã hủy</option>
+                </select>
+            </div>
+            <span id="result-count" class="mybk-result-count"></span>
+        </div>
+
+        <!-- Danh sách lịch hẹn (my-booking.js render) -->
+        <div id="booking-list"></div>
+
+    </main>
+
+    <!-- Modal: chi tiết lịch hẹn -->
+    <div id="detail-modal" class="modal" hidden>
+        <div class="modal-content">
+            <div class="modal-title">Chi tiết lịch hẹn</div>
+            <div id="detail-body"></div>
+            <div class="modal-actions">
+                <button type="button" id="btn-close-detail" class="btn btn-secondary">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: đánh giá dịch vụ (review.js điều khiển) -->
+    <div id="review-modal" class="modal" hidden>
+        <div class="modal-content">
+            <div class="modal-title">Đánh giá dịch vụ</div>
+
+            <form id="review-form" class="mybk-review-form" novalidate>
+                <div id="review-appointment-info" class="helper-text mybk-review-info"></div>
+
+                <div class="form-group">
+                    <label>Chất lượng dịch vụ <span class="required-mark">*</span></label>
+                    <div id="review-stars" class="star-picker"></div>
+                    <small id="review-star-error" class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-content">Phản hồi của bạn <span class="required-mark">*</span></label>
+                    <textarea
+                        id="review-content"
+                        rows="4"
+                        placeholder="Chia sẻ trải nghiệm của bạn và bé..."></textarea>
+                    <small id="review-content-error" class="error-message"></small>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" id="btn-cancel-review" class="btn btn-secondary">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Gửi đánh giá</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer"></footer>
+
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/util/booking-rules.js"></script>
+    <script src="../../js/auth/auth-guard.js"></script>
+    <script src="../../js/component/header.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <!-- review.js phải nạp trước my-booking.js -->
+    <script src="../../js/customer/review.js"></script>
+    <script src="../../js/customer/my-booking.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/component/chatbot.js"></script>
+
+</body>
+
+</html>

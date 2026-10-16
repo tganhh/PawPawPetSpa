@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPaw - Thêm dịch vụ</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/admin.css');
+    </style>
+
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/auth/auth-guard.js"></script>
+    <script>requireLogin(VAI_TRO.QUAN_LY);</script>
+</head>
+
+<body data-admin-page="service">
+
+    <header class="header">
+        <div class="container navbar"></div>
+    </header>
+
+    <main class="container admin-page">
+
+        <div class="page-header-row">
+            <h1 class="page-title" id="form-title" style="margin-bottom:0;">Thêm dịch vụ</h1>
+            <a class="btn btn-secondary" href="service.html">← Quay lại danh sách</a>
+        </div>
+
+        <div class="form-card" id="service-form-wrap">
+
+            <form id="service-form" class="auth-form" novalidate>
+
+                <div class="form-group">
+                    <label for="sv-id">Mã dịch vụ</label>
+                    <input type="text" id="sv-id" disabled>
+                    <span class="form-hint">Tự động sinh, không chỉnh sửa được.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="sv-ten">Tên dịch vụ *</label>
+                    <input type="text" id="sv-ten" maxlength="100" placeholder="Ví dụ: Tắm gội cơ bản">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="sv-nhom">Nhóm dịch vụ *</label>
+                        <input type="text" id="sv-nhom" list="sv-nhom-list" maxlength="50"
+                               placeholder="Chọn hoặc nhập nhóm mới">
+                        <datalist id="sv-nhom-list"></datalist>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sv-thoi-gian">Thời gian dự kiến (phút) *</label>
+                        <input type="number" id="sv-thoi-gian" min="1" step="1" placeholder="Ví dụ: 60">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sv-mo-ta">Mô tả chi tiết</label>
+                    <textarea id="sv-mo-ta" placeholder="Nội dung, quy trình, lưu ý của dịch vụ..."></textarea>
+                </div>
+
+                <div class="form-row-3">
+                    <div class="form-group">
+                        <label for="sv-gia-1">Giá dưới 5kg (VNĐ) *</label>
+                        <input type="number" id="sv-gia-1" min="1" step="1000" placeholder="Ví dụ: 150000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sv-gia-2">Giá 5–15kg (VNĐ) *</label>
+                        <input type="number" id="sv-gia-2" min="1" step="1000" placeholder="Ví dụ: 200000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sv-gia-3">Giá trên 15kg (VNĐ) *</label>
+                        <input type="number" id="sv-gia-3" min="1" step="1000" placeholder="Ví dụ: 300000">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sv-anh">Ảnh dịch vụ</label>
+                    <input type="text" id="sv-anh" placeholder="https://... hoặc assets/images/ten-anh.jpg">
+                    <span class="form-hint">Dán link ảnh hoặc đường dẫn tính từ thư mục gốc dự án.</span>
+                    <div class="image-preview" id="sv-anh-preview"></div>
+                </div>
+
+                <div class="form-actions">
+                    <a class="btn btn-secondary" href="service.html">Hủy</a>
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/util/validation.js"></script>
+    <script src="../../js/component/header-admin.js"></script>
+    <script src="../../js/admin/service.js"></script>
+
+</body>
+
+</html>

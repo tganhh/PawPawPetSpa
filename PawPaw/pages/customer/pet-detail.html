@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPaw - Chi tiết thú cưng</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/customer.css');
+        @import url('../../css/chatbot.css');
+    </style>
+
+    <!-- Chặn truy cập khi chưa đăng nhập: phải chạy trước khi render trang -->
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/auth/auth-guard.js"></script>
+    <script>requireLogin(VAI_TRO.KHACH_HANG);</script>
+</head>
+
+<body data-page="pet">
+
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <main class="container pet-page">
+        <div id="pet-detail"></div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/util/validation.js"></script>
+    <script src="../../js/component/header.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <script src="../../js/customer/pet.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/component/chatbot.js"></script>
+
+</body>
+
+</html>

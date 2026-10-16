@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawPaw - Quản lý người dùng</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/admin.css');
+    </style>
+</head>
+
+<body data-admin-page="user">
+
+    <!-- HEADER ADMIN -->
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container admin-user-page">
+
+        <!-- Tiêu đề -->
+        <section class="admin-user-header">
+            <h1 class="page-title">Quản lý người dùng</h1>
+            </section>
+
+        <!-- Tìm kiếm -->
+        <section class="admin-user-toolbar">
+            <form class="admin-user-search" id="customer-search-form">
+                <input
+                    type="text"
+                    id="customer-search"
+                    placeholder="Tìm theo mã, họ tên, email hoặc số điện thoại..."
+                    aria-label="Tìm kiếm người dùng"
+                >
+
+                <button
+                    type="submit"
+                    class="admin-user-search-button"
+                    aria-label="Tìm kiếm"
+                >
+                    <img src="../../assets/images/search.png" alt="">
+                </button>
+            </form>
+        </section>
+
+        <!-- Thống kê và đặt lại -->
+        <section class="admin-user-summary">
+            <p>
+                Tổng số người dùng:
+                <strong id="total-customers">0</strong>
+            </p>
+
+            <div class="admin-user-result-actions">
+                <p id="customer-result-count">
+                    Hiển thị 0 / 0 người dùng.
+                </p>
+
+                <button
+                    type="button"
+                    id="customer-reset-button"
+                    class="admin-user-reset-button"
+                >
+                    Đặt lại
+                </button>
+            </div>
+        </section>
+
+        <!-- Danh sách người dùng -->
+        <section
+            class="admin-user-list"
+            id="customer-list"
+            aria-label="Danh sách người dùng"
+        ></section>
+
+        <!-- Thông báo khi không có kết quả -->
+        <p
+            class="admin-user-empty"
+            id="customer-empty"
+            style="display: none;"
+        >
+            Không tìm thấy người dùng phù hợp.
+        </p>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+
+    <!-- UTIL -->
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+
+    <!-- COMPONENTS -->
+    <script src="../../js/component/header-admin.js"></script>
+    <script src="../../js/component/footer.js"></script>
+
+    <!-- ADMIN SCRIPT -->
+    <script src="../../js/admin/user.js"></script>
+
+</body>
+</html>

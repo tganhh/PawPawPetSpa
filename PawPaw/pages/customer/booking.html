@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt lịch chăm sóc - PawPaw</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/customer.css');
+        @import url('../../css/chatbot.css');
+    </style>
+</head>
+
+<body data-page="booking">
+
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <main class="container booking-page">
+
+        <div class="page-header-row">
+            <div>
+                <h1 class="page-title">Đặt Lịch Chăm Sóc Thú Cưng</h1>
+                <p>Điền thông tin đặt lịch để mang lại trải nghiệm 5 sao cho bé yêu</p>
+            </div>
+
+            <a href="my-booking.html" class="btn btn-secondary btn-sm">Xem lịch đã đặt</a>
+        </div>
+
+        <form id="booking-form" novalidate>
+
+            <!-- 1. Chọn thú cưng & dịch vụ -->
+            <div class="booking-card">
+
+                <div class="booking-section-heading">
+                    <span>1. Chọn thú cưng & dịch vụ</span>
+                    <button type="button" id="btn-add-pet-row" class="btn btn-secondary btn-sm">
+                        + Thêm thú cưng
+                    </button>
+                </div>
+
+                <!-- Các khối thú cưng được render bằng JavaScript -->
+                <div id="pet-items-container"></div>
+
+                <div id="pet-selection-error" class="error-message booking-pet-error"></div>
+            </div>
+
+            <!-- 2. Thời gian chăm sóc -->
+            <div class="booking-card">
+
+                <div class="booking-section-heading">
+                    <span>2. Thời gian chăm sóc</span>
+                    <span id="estimated-duration-badge" class="booking-duration">Tổng thời gian: 0 phút</span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="booking-date">
+                            Ngày hẹn <span class="required-mark">*</span>
+                        </label>
+                        <input type="date" id="booking-date" name="booking_date" required>
+                        <small class="error-message"></small>
+                    </div>
+                </div>
+
+                <div class="form-group booking-time-group">
+                    <label>
+                        Khung giờ thực hiện <span class="required-mark">*</span>
+                    </label>
+
+                    <div class="helper-text">
+                        Chọn ngày để xem các khung giờ còn trống (giờ gạch ngang biểu thị đã kín hoặc không đủ thời lượng cho ca dịch vụ).
+                    </div>
+
+                    <div id="slots-container" class="booking-slots">
+                        <div class="helper-text booking-slot-placeholder">
+                            Vui lòng chọn ngày trước để tải danh sách khung giờ.
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="selected-slot" name="selected_slot">
+
+                    <small id="slot-error-message" class="error-message booking-slot-error"></small>
+                </div>
+            </div>
+
+            <!-- 3. Ghi chú & xác nhận -->
+            <div class="booking-card">
+
+                <div class="booking-section-heading">
+                    <span>3. Ghi chú & Chi phí dự kiến</span>
+                </div>
+
+                <div class="form-group booking-note-group">
+                    <label for="booking-note">Ghi chú cho PawPaw (không bắt buộc)</label>
+                    <textarea
+                        id="booking-note"
+                        rows="3"
+                        placeholder="Ví dụ: Bé sợ máy sấy, da nhạy cảm..."></textarea>
+                </div>
+
+                <div class="booking-summary">
+                    <div class="booking-summary-row">
+                        <span>Số lượng thú cưng:</span>
+                        <span id="summary-pet-count">0 bé</span>
+                    </div>
+
+                    <div class="booking-summary-row">
+                        <span>Tổng số dịch vụ:</span>
+                        <span id="summary-service-count">0 dịch vụ</span>
+                    </div>
+
+                    <div class="booking-summary-row">
+                        <span>Dự kiến hoàn thành trong:</span>
+                        <span id="summary-duration">0 phút</span>
+                    </div>
+
+                    <div class="booking-summary-row total">
+                        <span>Tổng chi phí dự kiến:</span>
+                        <span id="summary-total-price">0 ₫</span>
+                    </div>
+                </div>
+
+                <div class="booking-submit-wrapper">
+                    <button type="submit" id="btn-submit-booking" class="btn btn-primary booking-submit-button">
+                        Xác nhận đặt lịch
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/util/validation.js"></script>
+    <script src="../../js/util/booking-rules.js"></script>
+    <script src="../../js/auth/auth-guard.js"></script>
+    <script src="../../js/component/header.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <script src="../../js/customer/booking.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/component/chatbot.js"></script>
+
+</body>
+
+</html>

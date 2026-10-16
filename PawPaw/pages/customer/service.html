@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPaw - Dịch vụ chăm sóc thú cưng</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/customer.css');
+        @import url('../../css/chatbot.css');
+    </style>
+</head>
+
+<body data-page="service">
+
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <main class="container service-page">
+
+        <section class="service-header">
+            <h1 class="page-title">Dịch vụ chăm sóc thú cưng</h1>
+            <p class="page-text">
+                Khám phá các dịch vụ chăm sóc và làm đẹp dành cho thú cưng tại PawPaw.
+            </p>
+        </section>
+
+        <!-- Tìm kiếm + bộ lọc -->
+        <section class="service-toolbar">
+
+            <div class="service-search">
+                <input
+                    type="text"
+                    id="service-search-input"
+                    placeholder="Tìm kiếm dịch vụ..."
+                    autocomplete="off">
+
+                <button
+                    type="button"
+                    id="service-search-button"
+                    class="service-search-button"
+                    aria-label="Tìm kiếm dịch vụ">
+                    <img src="../../assets/images/search.png" alt="Tìm kiếm">
+                </button>
+            </div>
+
+            <a href="service-filter.html" class="btn btn-secondary service-filter-btn">Bộ lọc</a>
+
+        </section>
+
+        <!-- Danh sách dịch vụ (service.js render) -->
+        <section class="service-list-section">
+            <div id="service-list" class="service-list"></div>
+
+            <p id="service-empty" class="service-empty">
+                Không tìm thấy dịch vụ phù hợp.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/component/header.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <script src="../../js/customer/service.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/component/chatbot.js"></script>
+
+</body>
+
+</html>

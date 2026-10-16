@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPaw - Chi tiết dịch vụ</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/customer.css');
+        @import url('../../css/chatbot.css');
+    </style>
+</head>
+
+<body data-page="service">
+
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <main class="container service-detail-page">
+
+        <section class="service-header">
+            <h1 class="page-title">Chi tiết dịch vụ</h1>
+            <p class="page-text">
+                Thông tin chi tiết về dịch vụ chăm sóc thú cưng tại PawPaw.
+            </p>
+        </section>
+
+        <!-- Chi tiết dịch vụ (service.js lấy id từ URL và render) -->
+        <section class="service-detail-section">
+            <div id="service-detail"></div>
+
+            <p id="service-detail-empty" class="service-empty">
+                Không tìm thấy dịch vụ.
+            </p>
+        </section>
+
+        <!-- Đánh giá của khách hàng (chỉ đánh giá đang hiện) -->
+        <section class="service-review-section" id="service-review-section">
+            <div class="service-review-head">
+                <h2 class="service-review-title">Đánh giá của khách hàng</h2>
+                <div id="service-review-summary" class="service-review-summary"></div>
+            </div>
+            <div id="service-review-list"></div>
+        </section>
+
+        <div class="service-detail-actions">
+            <a href="service.html" class="btn btn-secondary">Quay lại</a>
+        </div>
+
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/component/header.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <script src="../../js/customer/service.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/component/chatbot.js"></script>
+
+</body>
+
+</html>

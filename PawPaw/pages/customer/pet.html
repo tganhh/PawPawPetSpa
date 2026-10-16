@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPaw - Thú cưng của tôi</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/customer.css');
+        @import url('../../css/chatbot.css');
+    </style>
+
+    <!-- Chặn truy cập khi chưa đăng nhập: phải chạy trước khi render trang -->
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/auth/auth-guard.js"></script>
+    <script>requireLogin(VAI_TRO.KHACH_HANG);</script>
+</head>
+
+<body data-page="pet">
+
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <main class="container pet-page">
+
+        <div class="page-header-row">
+            <h1 class="page-title pet-page-title">
+                Thú cưng của tôi (<span id="pet-count">0</span>)
+            </h1>
+            <button type="button" class="btn btn-primary" id="btn-add-pet">+ Thêm thú cưng</button>
+        </div>
+
+        <div class="pet-grid" id="pet-list"></div>
+
+    </main>
+
+    <footer class="footer"></footer>
+
+    <!-- Modal thêm / sửa thú cưng -->
+    <div class="modal" id="pet-modal" hidden>
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title" id="pet-modal-title">Thêm thú cưng</h2>
+                <button type="button" class="modal-close" id="btn-close-modal" aria-label="Đóng">&times;</button>
+            </div>
+
+            <form id="pet-form" class="form-stack" novalidate>
+
+                <input type="hidden" id="pet-id">
+
+                <div class="form-group">
+                    <label for="pet-ten">Tên thú cưng *</label>
+                    <input type="text" id="pet-ten" placeholder="Ví dụ: Bé Miu" maxlength="60">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-loai">Loại *</label>
+                        <select id="pet-loai">
+                            <option value="">-- Chọn loại --</option>
+                            <option value="1">Mèo</option>
+                            <option value="2">Chó</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pet-gioi-tinh">Giới tính *</label>
+                        <select id="pet-gioi-tinh">
+                            <option value="">-- Chọn giới tính --</option>
+                            <option value="1">Cái</option>
+                            <option value="2">Đực</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-giong">Giống</label>
+                        <input type="text" id="pet-giong" placeholder="Ví dụ: Poodle, Mèo Anh lông ngắn">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pet-mau-long">Màu lông</label>
+                        <input type="text" id="pet-mau-long" placeholder="Ví dụ: Xám xanh">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-nam-sinh">Năm sinh</label>
+                        <input type="number" id="pet-nam-sinh" step="1" placeholder="Ví dụ: 2023">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pet-can-nang">Cân nặng (kg) *</label>
+                        <input type="number" id="pet-can-nang" step="0.1" min="0.1" placeholder="Ví dụ: 4.5">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pet-anh">Link ảnh thú cưng</label>
+                    <input type="text" id="pet-anh" placeholder="https://...">
+                </div>
+
+                <div class="form-group">
+                    <label for="pet-ghi-chu">Ghi chú</label>
+                    <textarea id="pet-ghi-chu" placeholder="Tính cách, điều cần lưu ý khi chăm sóc..."></textarea>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" id="btn-cancel-modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/util/validation.js"></script>
+    <script src="../../js/component/header.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <script src="../../js/customer/pet.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/component/chatbot.js"></script>
+
+</body>
+
+</html>

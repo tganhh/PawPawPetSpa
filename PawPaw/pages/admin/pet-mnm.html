@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawPaw - Chỉnh sửa thú cưng</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/admin.css');
+    </style>
+</head>
+
+<!-- Trang này không nằm trên menu, chỉ mở từ user.html nên giữ mục "Quản trị người dùng" sáng -->
+<body data-admin-page="user">
+
+    <!-- HEADER ADMIN -->
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container pet-page">
+
+        <!-- Tiêu đề -->
+        <section class="page-header-row">
+            <h1 class="page-title" id="pet-page-title" style="margin-bottom: 0;">Chỉnh sửa thú cưng</h1>
+            <a href="user.html" class="btn btn-secondary">← Quay lại danh sách khách hàng</a>
+        </section>
+
+        <!-- Form chỉnh sửa (mặc định ở chế độ sửa) -->
+        <section class="detail-card">
+
+            <div class="pet-card-photo is-large" id="pet-photo-preview"></div>
+
+            <form id="pet-form" novalidate>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-id">Mã thú cưng</label>
+                        <input type="text" id="pet-id" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pet-owner">Chủ sở hữu</label>
+                        <input type="text" id="pet-owner" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-name">Tên thú cưng *</label>
+                        <input type="text" id="pet-name" maxlength="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pet-breed">Giống *</label>
+                        <input type="text" id="pet-breed" maxlength="50">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-type">Loài *</label>
+                        <select id="pet-type">
+                            <option value="1">Mèo</option>
+                            <option value="2">Chó</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pet-gender">Giới tính *</label>
+                        <select id="pet-gender">
+                            <option value="1">Cái</option>
+                            <option value="2">Đực</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-year">Năm sinh *</label>
+                        <input type="number" id="pet-year" inputmode="numeric">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pet-weight">Cân nặng (kg) *</label>
+                        <input type="number" id="pet-weight" step="0.1" inputmode="decimal">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pet-color">Màu lông</label>
+                    <input type="text" id="pet-color" maxlength="50">
+                </div>
+
+                <div class="form-group">
+                    <label for="pet-photo">Đường dẫn ảnh (URL)</label>
+                    <input type="text" id="pet-photo" placeholder="https://...">
+                </div>
+
+                <div class="form-group">
+                    <label for="pet-note">Ghi chú</label>
+                    <textarea id="pet-note" maxlength="300"></textarea>
+                </div>
+
+                <!-- Nút ở phía dưới form -->
+                <div class="page-actions" style="justify-content: flex-end;">
+                    <a href="user.html" class="btn btn-secondary">Hủy</a>
+                    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+
+    <!-- UTIL -->
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/util/validation.js"></script>
+
+    <!-- COMPONENTS -->
+    <script src="../../js/component/header-admin.js"></script>
+    <script src="../../js/component/footer.js"></script>
+
+    <!-- ADMIN SCRIPT -->
+    <script src="../../js/admin/pet-mnm.js"></script>
+
+</body>
+</html>

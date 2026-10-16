@@ -1,0 +1,622 @@
+[
+  {
+    "ma_nguoi_dung": "KH001",
+    "ho_ten": "Hồng Trang Anh",
+    "email": "tranganh.hong@example.com",
+    "so_dien_thoai": "0901112233",
+    "mat_khau": "TrangAnh@2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+    "dia_chi": "123 Lê Lợi, Phường Bến Nghé, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH002",
+    "ho_ten": "Nguyễn Vũ Tường Anh",
+    "email": "tuonganh.nguyen@example.com",
+    "so_dien_thoai": "0902223344",
+    "mat_khau": "TuongAnh#2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "dia_chi": "456 Nam Kỳ Khởi Nghĩa, Phường 8, Quận 3, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH003",
+    "ho_ten": "Nguyễn Trần Yên Đan",
+    "email": "yendan.nguyen@example.com",
+    "so_dien_thoai": "0903334455",
+    "mat_khau": "YenDan$2024",
+    "anh_dai_dien": null,
+    "dia_chi": "78 Hai Bà Trưng, Phường Bến Nghé, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH004",
+    "ho_ten": "Võ Ngọc Quỳnh Hương",
+    "email": "quynhhuong.vo@example.com",
+    "so_dien_thoai": "0904445566",
+    "mat_khau": "QuynhHuong!2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "dia_chi": "101 Điện Biên Phủ, Phường 25, Bình Thạnh, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH005",
+    "ho_ten": "Nguyễn Nhật Uyên Thư",
+    "email": "uyenthu.nguyen@example.com",
+    "so_dien_thoai": "0905556677",
+    "mat_khau": "UyenThu%2024",
+    "anh_dai_dien": null,
+    "dia_chi": "23 Nguyễn Thị Minh Khai, Phường Đa Kao, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH006",
+    "ho_ten": "Trần Minh Cường",
+    "email": "cuong.tran@example.com",
+    "so_dien_thoai": "0923456789",
+    "mat_khau": "CuongTran@123",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61",
+    "dia_chi": "35 Võ Văn Tần, Phường Võ Thị Sáu, Quận 3, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH007",
+    "ho_ten": "Vũ Huy Hoàng",
+    "email": "hoang.vu@example.com",
+    "so_dien_thoai": "0967890123",
+    "mat_khau": "HuyHoang!99",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "dia_chi": "89 Pasteur, Phường Bến Nghé, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH008",
+    "ho_ten": "Bùi Khánh Linh",
+    "email": "linh.bui@example.com",
+    "so_dien_thoai": "0978901234",
+    "mat_khau": "LinhBui#2024",
+    "anh_dai_dien": null,
+    "dia_chi": "12 Lý Thường Kiệt, Quận 10, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH009",
+    "ho_ten": "Ngô Nhật Minh",
+    "email": "minh.ngo@example.com",
+    "so_dien_thoai": "0989012345",
+    "mat_khau": "MinhNgo$88",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce",
+    "dia_chi": "42 Hoàng Diệu, Phường 12, Quận 4, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH010",
+    "ho_ten": "Dương Tuyết Nga",
+    "email": "nga.duong@example.com",
+    "so_dien_thoai": "0990123456",
+    "mat_khau": "TuyetNga%01",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+    "dia_chi": "77 Phan Xích Long, Phú Nhuận, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH011",
+    "ho_ten": "Đặng Thành Phong",
+    "email": "phong.dang@example.com",
+    "so_dien_thoai": "0911223344",
+    "mat_khau": "PhongDang@77",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "68 CMT8, Quận Tân Bình, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH012",
+    "ho_ten": "Trịnh Như Quỳnh",
+    "email": "quynh.trinh@example.com",
+    "so_dien_thoai": "0922334455",
+    "mat_khau": "NhuQuynh!66",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+    "dia_chi": "15 Lê Văn Sỹ, Quận 3, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH013",
+    "ho_ten": "Võ Tấn Sơn",
+    "email": "son.vo@example.com",
+    "so_dien_thoai": "0933445566",
+    "mat_khau": "TanSon#55",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1480429370139-e0132c086e2a",
+    "dia_chi": "210 Xô Viết Nghệ Tĩnh, Bình Thạnh, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH014",
+    "ho_ten": "Lý Hương Thảo",
+    "email": "thao.ly@example.com",
+    "so_dien_thoai": "0944556677",
+    "mat_khau": "HuongThao$44",
+    "anh_dai_dien": null,
+    "dia_chi": "54 Nguyễn Hữu Cảnh, Bình Thạnh, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH015",
+    "ho_ten": "Hồ Văn Uy",
+    "email": "uy.ho@example.com",
+    "so_dien_thoai": "0955667788",
+    "mat_khau": "VanUy%33",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
+    "dia_chi": "96 Trần Hưng Đạo, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH016",
+    "ho_ten": "Phan Cẩm Vân",
+    "email": "van.phan@example.com",
+    "so_dien_thoai": "0966778899",
+    "mat_khau": "CamVan@22",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+    "dia_chi": "142 Hai Bà Trưng, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH017",
+    "ho_ten": "Mai Thế Xuân",
+    "email": "xuan.mai@example.com",
+    "so_dien_thoai": "0977889900",
+    "mat_khau": "TheXuan!11",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "33 Trần Não, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH018",
+    "ho_ten": "Tô Ngọc Yến",
+    "email": "yen.to@example.com",
+    "so_dien_thoai": "0988990011",
+    "mat_khau": "NgocYen#00",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    "dia_chi": "88 Thảo Điền, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH019",
+    "ho_ten": "Phan Thanh Tùng",
+    "email": "tung.phan74@example.com",
+    "so_dien_thoai": "0900093866",
+    "mat_khau": "Tung@2025",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1480429370139-e0132c086e2a",
+    "dia_chi": "426 Cách Mạng Tháng 8, Phường Tân Phú, Quận 7, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH020",
+    "ho_ten": "Trần Gia Khang",
+    "email": "khang.tran51@example.com",
+    "so_dien_thoai": "0970415349",
+    "mat_khau": "Khang@2021",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+    "dia_chi": "24 Huỳnh Tấn Phát, Phường Bến Nghé, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH021",
+    "ho_ten": "Ngô Thu Linh",
+    "email": "linh.ngo57@example.com",
+    "so_dien_thoai": "0837011380",
+    "mat_khau": "Linh@2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "dia_chi": "243 Lê Lợi, Phường Tân Phú, Quận 7, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH022",
+    "ho_ten": "Trịnh Quốc Phong",
+    "email": "phong.trinh5@example.com",
+    "so_dien_thoai": "0383622140",
+    "mat_khau": "Phong@2023",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "181 Phạm Văn Đồng, Phường 2, Quận Phú Nhuận, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH023",
+    "ho_ten": "Dương Mai Linh",
+    "email": "linh.duong81@example.com",
+    "so_dien_thoai": "0383094237",
+    "mat_khau": "Linh@2025",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
+    "dia_chi": "261 Phạm Văn Đồng, Phường Tân Định, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH024",
+    "ho_ten": "Vũ Hải Chi",
+    "email": "chi.vu15@example.com",
+    "so_dien_thoai": "0780691678",
+    "mat_khau": "Chi@2021",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "dia_chi": "206 Thảo Điền, Phường 7, Quận Bình Thạnh, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH025",
+    "ho_ten": "Trần Văn Phúc",
+    "email": "phuc.tran42@example.com",
+    "so_dien_thoai": "0930298245",
+    "mat_khau": "Phuc@2020",
+    "anh_dai_dien": null,
+    "dia_chi": "76 Nguyễn Văn Linh, Phường 12, Quận Gò Vấp, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH026",
+    "ho_ten": "Lương Minh Phong",
+    "email": "phong.luong32@example.com",
+    "so_dien_thoai": "0384695970",
+    "mat_khau": "Phong@2025",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+    "dia_chi": "416 Nguyễn Thị Minh Khai, Phường 15, Quận Tân Bình, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH027",
+    "ho_ten": "Lê Thu Vy",
+    "email": "vy.le68@example.com",
+    "so_dien_thoai": "0976022802",
+    "mat_khau": "Vy@2023",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+    "dia_chi": "183 Nguyễn Huệ, Phường Bến Nghé, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH028",
+    "ho_ten": "Huỳnh Quốc Quân",
+    "email": "quan.huynh16@example.com",
+    "so_dien_thoai": "0835266065",
+    "mat_khau": "Quan@2020",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "18 Lê Văn Việt, Phường 15, Quận Tân Bình, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH029",
+    "ho_ten": "Hồ Văn Tín",
+    "email": "tin.ho9@example.com",
+    "so_dien_thoai": "0988160310",
+    "mat_khau": "Tin@2022",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+    "dia_chi": "101 Nguyễn Huệ, Phường Linh Trung, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH030",
+    "ho_ten": "Phạm Hoàng Kiên",
+    "email": "kien.pham93@example.com",
+    "so_dien_thoai": "0970287932",
+    "mat_khau": "Kien@2025",
+    "anh_dai_dien": null,
+    "dia_chi": "5 Quang Trung, Phường 2, Quận Phú Nhuận, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH031",
+    "ho_ten": "Đặng Văn Huy",
+    "email": "huy.dang27@example.com",
+    "so_dien_thoai": "0780482417",
+    "mat_khau": "Huy@2021",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+    "dia_chi": "245 Phạm Văn Đồng, Phường 7, Quận Bình Thạnh, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH032",
+    "ho_ten": "Lương Khánh Hương",
+    "email": "huong.luong73@example.com",
+    "so_dien_thoai": "0386149699",
+    "mat_khau": "Huong@2022",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
+    "dia_chi": "295 Phạm Văn Đồng, Phường 4, Quận 10, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH033",
+    "ho_ten": "Đỗ Hữu Long",
+    "email": "long.do13@example.com",
+    "so_dien_thoai": "0976321538",
+    "mat_khau": "Long@2022",
+    "anh_dai_dien": null,
+    "dia_chi": "347 Điện Biên Phủ, Phường Tân Phú, Quận 7, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH034",
+    "ho_ten": "Hoàng Bảo Quyên",
+    "email": "quyen.hoang83@example.com",
+    "so_dien_thoai": "0909202610",
+    "mat_khau": "Quyen@2022",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1480429370139-e0132c086e2a",
+    "dia_chi": "201 Cách Mạng Tháng 8, Phường Tân Định, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH035",
+    "ho_ten": "Lương Ngọc Ngọc",
+    "email": "ngoc.luong39@example.com",
+    "so_dien_thoai": "0837136893",
+    "mat_khau": "Ngoc@2020",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "dia_chi": "138 Lê Văn Việt, Phường Tân Phú, Quận 7, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH036",
+    "ho_ten": "Trịnh Văn Bảo",
+    "email": "bao.trinh76@example.com",
+    "so_dien_thoai": "0786937838",
+    "mat_khau": "Bao@2021",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "37 Phạm Văn Đồng, Phường Bến Nghé, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH037",
+    "ho_ten": "Huỳnh Thu Ngân",
+    "email": "ngan.huynh70@example.com",
+    "so_dien_thoai": "0830093802",
+    "mat_khau": "Ngan@2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+    "dia_chi": "125 Hoàng Văn Thụ, Phường An Phú, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH038",
+    "ho_ten": "Đỗ Thu Phương",
+    "email": "phuong.do20@example.com",
+    "so_dien_thoai": "0834633456",
+    "mat_khau": "Phuong@2023",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    "dia_chi": "19 Huỳnh Tấn Phát, Phường 12, Quận Gò Vấp, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH039",
+    "ho_ten": "Huỳnh Tuấn Thịnh",
+    "email": "thinh.huynh20@example.com",
+    "so_dien_thoai": "0939696707",
+    "mat_khau": "Thinh@2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "306 Điện Biên Phủ, Phường Bến Nghé, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH040",
+    "ho_ten": "Võ Quốc Phong",
+    "email": "phong.vo94@example.com",
+    "so_dien_thoai": "0836481116",
+    "mat_khau": "Phong@2020",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "dia_chi": "103 Phạm Văn Đồng, Phường An Phú, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH041",
+    "ho_ten": "Đỗ Phương Ngân",
+    "email": "ngan.do41@example.com",
+    "so_dien_thoai": "0788898026",
+    "mat_khau": "Ngan@2023",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "dia_chi": "280 Lê Văn Việt, Phường 15, Quận Tân Bình, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH042",
+    "ho_ten": "Ngô Ngọc Trâm",
+    "email": "tram.ngo76@example.com",
+    "so_dien_thoai": "0988457031",
+    "mat_khau": "Tram@2021",
+    "anh_dai_dien": null,
+    "dia_chi": "414 Điện Biên Phủ, Phường Tây Thạnh, Quận Tân Phú, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH043",
+    "ho_ten": "Đinh Minh Phương",
+    "email": "phuong.dinh58@example.com",
+    "so_dien_thoai": "0901758403",
+    "mat_khau": "Phuong@2022",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "127 Nguyễn Văn Linh, Phường An Phú, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH044",
+    "ho_ten": "Lê Minh Oanh",
+    "email": "oanh.le56@example.com",
+    "so_dien_thoai": "0975124191",
+    "mat_khau": "Oanh@2021",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    "dia_chi": "157 Nguyễn Văn Linh, Phường Bến Nghé, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH045",
+    "ho_ten": "Cao Mai Uyên",
+    "email": "uyen.cao68@example.com",
+    "so_dien_thoai": "0385006450",
+    "mat_khau": "Uyen@2023",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "dia_chi": "225 Nguyễn Thị Minh Khai, Phường Linh Trung, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH046",
+    "ho_ten": "Bùi Tuấn Phúc",
+    "email": "phuc.bui89@example.com",
+    "so_dien_thoai": "0706014204",
+    "mat_khau": "Phuc@2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1480429370139-e0132c086e2a",
+    "dia_chi": "429 Cách Mạng Tháng 8, Phường Bến Nghé, Quận 1, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH047",
+    "ho_ten": "Đặng Minh Lan",
+    "email": "lan.dang40@example.com",
+    "so_dien_thoai": "0988296307",
+    "mat_khau": "Lan@2020",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+    "dia_chi": "429 Lê Lợi, Phường 15, Quận Tân Bình, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH048",
+    "ho_ten": "Đặng Diệu Trâm",
+    "email": "tram.dang22@example.com",
+    "so_dien_thoai": "0933649596",
+    "mat_khau": "Tram@2023",
+    "anh_dai_dien": null,
+    "dia_chi": "283 Phan Xích Long, Phường Linh Trung, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH049",
+    "ho_ten": "Đặng Hải Nhi",
+    "email": "nhi.dang88@example.com",
+    "so_dien_thoai": "0707089168",
+    "mat_khau": "Nhi@2025",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "dia_chi": "27 Điện Biên Phủ, Phường 4, Quận 10, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH050",
+    "ho_ten": "Bùi Ngọc Trâm",
+    "email": "tram.bui87@example.com",
+    "so_dien_thoai": "0980273784",
+    "mat_khau": "Tram@2025",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "326 Võ Văn Tần, Phường 15, Quận Tân Bình, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH051",
+    "ho_ten": "Lê Văn Thịnh",
+    "email": "thinh.le58@example.com",
+    "so_dien_thoai": "0837035153",
+    "mat_khau": "Thinh@2021",
+    "anh_dai_dien": null,
+    "dia_chi": "439 Hoàng Văn Thụ, Phường 12, Quận Gò Vấp, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH052",
+    "ho_ten": "Cao Phương Phương",
+    "email": "phuong.cao52@example.com",
+    "so_dien_thoai": "0861026102",
+    "mat_khau": "Phuong@2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+    "dia_chi": "375 Võ Văn Tần, Phường 4, Quận 10, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH053",
+    "ho_ten": "Nguyễn Phương Linh",
+    "email": "linh.nguyen56@example.com",
+    "so_dien_thoai": "0906531097",
+    "mat_khau": "Linh@2020",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "100 Phan Xích Long, Phường Linh Trung, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH054",
+    "ho_ten": "Dương Minh Uyên",
+    "email": "uyen.duong55@example.com",
+    "so_dien_thoai": "0976721584",
+    "mat_khau": "Uyen@2024",
+    "anh_dai_dien": null,
+    "dia_chi": "329 Lê Lợi, Phường Tân Phú, Quận 7, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH055",
+    "ho_ten": "Võ Phương Trâm",
+    "email": "tram.vo25@example.com",
+    "so_dien_thoai": "0707815925",
+    "mat_khau": "Tram@2022",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "dia_chi": "145 Lê Văn Việt, Phường 15, Quận Tân Bình, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH056",
+    "ho_ten": "Hoàng Ngọc Uyên",
+    "email": "uyen.hoang62@example.com",
+    "so_dien_thoai": "0937981282",
+    "mat_khau": "Uyen@2020",
+    "anh_dai_dien": null,
+    "dia_chi": "335 Nguyễn Thị Minh Khai, Phường 7, Quận Bình Thạnh, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH057",
+    "ho_ten": "Lê Gia Tùng",
+    "email": "tung.le46@example.com",
+    "so_dien_thoai": "0900415352",
+    "mat_khau": "Tung@2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "dia_chi": "20 Trường Chinh, Phường Linh Trung, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH058",
+    "ho_ten": "Lê Minh Khang",
+    "email": "khang.le30@example.com",
+    "so_dien_thoai": "0785912130",
+    "mat_khau": "Khang@2020",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+    "dia_chi": "133 Lê Lợi, Phường 7, Quận Bình Thạnh, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH059",
+    "ho_ten": "Huỳnh Khánh Yến",
+    "email": "yen.huynh49@example.com",
+    "so_dien_thoai": "0784633305",
+    "mat_khau": "Yen@2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "dia_chi": "163 Quang Trung, Phường Tân Phú, Quận 7, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "KH060",
+    "ho_ten": "Cao Minh Huy",
+    "email": "huy.cao45@example.com",
+    "so_dien_thoai": "0986454858",
+    "mat_khau": "Huy@2025",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    "dia_chi": "21 Phan Xích Long, Phường Linh Trung, TP. Thủ Đức, TP.HCM",
+    "vai_tro": "khách hàng"
+  },
+  {
+    "ma_nguoi_dung": "QTV001",
+    "ho_ten": "Lê Hoàng Nam",
+    "email": "nam.le@petcare.vn",
+    "so_dien_thoai": "0988888888",
+    "mat_khau": "HoangNam@2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1560250097-0b93528c311a",
+    "dia_chi": "Cửa hàng PetCare, 789 CMT8, Quận 10, TP.HCM",
+    "vai_tro": "quản lý"
+  },
+  {
+    "ma_nguoi_dung": "QTV002",
+    "ho_ten": "Trần Phương Thảo",
+    "email": "thao.tran@petcare.vn",
+    "so_dien_thoai": "0977777777",
+    "mat_khau": "PhuongThao#2024",
+    "anh_dai_dien": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
+    "dia_chi": "Cửa hàng PetCare, 789 CMT8, Quận 10, TP.HCM",
+    "vai_tro": "quản lý"
+  }
+]

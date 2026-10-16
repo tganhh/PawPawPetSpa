@@ -1,0 +1,130 @@
+[
+  {
+    "ma_danh_gia": "DG001",
+    "ma_lich_hen": "LH001",
+    "so_sao": 5,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-08-05T11:30:00",
+    "noi_dung_danh_gia": "Bé Miu được tắm rất nhẹ nhàng, nhân viên kiên nhẫn với bé nhát người. Sẽ quay lại!"
+  },
+  {
+    "ma_danh_gia": "DG002",
+    "ma_lich_hen": "LH002",
+    "so_sao": 5,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-08-08T13:15:00",
+    "noi_dung_danh_gia": "Milo được cắt tỉa rất xinh, dáng tròn đúng ý. Máy sấy cũng được dùng nhỏ cho bé đỡ sợ."
+  },
+  {
+    "ma_danh_gia": "DG003",
+    "ma_lich_hen": "LH003",
+    "so_sao": 4,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-08-12T17:00:00",
+    "noi_dung_danh_gia": "Dịch vụ tốt, bé Bơ sạch thơm. Chỉ hơi chờ lâu một chút vì bé hiếu động."
+  },
+  {
+    "ma_danh_gia": "DG004",
+    "ma_lich_hen": "LH004",
+    "so_sao": 5,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-08-15T12:45:00",
+    "noi_dung_danh_gia": "Lông Kem được gỡ rối mà không làm bé đau, tắm xong lông bồng bềnh."
+  },
+  {
+    "ma_danh_gia": "DG005",
+    "ma_lich_hen": "LH005",
+    "so_sao": 4,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-08-20T18:20:00",
+    "noi_dung_danh_gia": "Simba thích tắm nước ấm, nhân viên thân thiện. Giá hợp lý cho chó size lớn."
+  },
+  {
+    "ma_danh_gia": "DG006",
+    "ma_lich_hen": "LH006",
+    "so_sao": 5,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-08-25T12:10:00",
+    "noi_dung_danh_gia": "Da Đậu Phộng đỡ ngứa hẳn sau liệu trình thảo dược. Rất hài lòng."
+  },
+  {
+    "ma_danh_gia": "DG007",
+    "ma_lich_hen": "LH007",
+    "so_sao": 3,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-08-28T10:30:00",
+    "noi_dung_danh_gia": "Khử mùi ổn nhưng bé Kuro hơi căng thẳng, mong nhân viên dỗ bé nhiều hơn."
+  },
+  {
+    "ma_danh_gia": "DG008",
+    "ma_lich_hen": "LH008",
+    "so_sao": 5,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-09-02T12:40:00",
+    "noi_dung_danh_gia": "Bông sợ nước nhưng tắm bọt khô rất êm, bé không kêu nhiều như mọi lần."
+  },
+  {
+    "ma_danh_gia": "DG009",
+    "ma_lich_hen": "LH009",
+    "so_sao": 4,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-09-05T17:10:00",
+    "noi_dung_danh_gia": "Lu được chải lông kỹ, rụng ít hẳn. Spa sạch sẽ, nhân viên nhiệt tình."
+  },
+  {
+    "ma_danh_gia": "DG010",
+    "ma_lich_hen": "LH010",
+    "so_sao": 5,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-09-08T11:50:00",
+    "noi_dung_danh_gia": "Mun cạo lông sư tử rất đẹp, trông gọn mát hơn nhiều."
+  },
+  {
+    "ma_danh_gia": "DG011",
+    "ma_lich_hen": "LH011",
+    "so_sao": 4,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-09-10T18:00:00",
+    "noi_dung_danh_gia": "Các nếp gấp quanh mũi Sushi được lau sạch sẽ, bé thơm tho."
+  },
+  {
+    "ma_danh_gia": "DG012",
+    "ma_lich_hen": "LH012",
+    "so_sao": 3,
+    "trang_thai_hien_thi": "an",
+    "thoi_gian_danh_gia": "2026-09-14T17:05:00",
+    "noi_dung_danh_gia": "Cacao được gỡ rối ổn nhưng thời gian chờ lâu hơn dự kiến, lịch bị trễ gần 40 phút."
+  },
+  {
+    "ma_danh_gia": "DG013",
+    "ma_lich_hen": "LH013",
+    "so_sao": 5,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-09-18T13:20:00",
+    "noi_dung_danh_gia": "Mực cạo lông gọn gàng, mát mẻ. Giá tốt, sẽ giới thiệu bạn bè."
+  },
+  {
+    "ma_danh_gia": "DG014",
+    "ma_lich_hen": "LH015",
+    "so_sao": 5,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-09-22T12:30:00",
+    "noi_dung_danh_gia": "Lucky lần đầu đi spa mà rất ngoan, nhân viên hướng dẫn nhẹ nhàng. Cảm ơn shop!"
+  },
+  {
+    "ma_danh_gia": "DG015",
+    "ma_lich_hen": "LH016",
+    "so_sao": 4,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-09-25T18:40:00",
+    "noi_dung_danh_gia": "Rex sạch thơm, nhân viên quý bé. Mong có thêm khung giờ buổi tối."
+  },
+  {
+    "ma_danh_gia": "DG016",
+    "ma_lich_hen": "LH017",
+    "so_sao": 5,
+    "trang_thai_hien_thi": "hien_thi",
+    "thoi_gian_danh_gia": "2026-09-27T13:10:00",
+    "noi_dung_danh_gia": "Xíu không bị run vì phòng được giữ ấm, cắt tỉa mặt rất đáng yêu."
+  }
+]

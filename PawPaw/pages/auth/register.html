@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPaw - Đăng ký</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/auth.css');
+    </style>
+</head>
+
+<body
+    style="
+        background-image: url('../../assets/images/background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    "
+>
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+            <div class="auth-content">
+
+                <div class="auth-header">
+
+                    <h1 class="auth-title">
+                        Đăng ký
+                    </h1>
+
+                    <img
+                        src="../../assets/images/logo.jpg"
+                        alt="PawPaw Logo"
+                        class="auth-logo"
+                    >
+
+                    <img
+                        src="../../assets/images/pawpawheader.png"
+                        alt="PawPaw"
+                        class="auth-brand"
+                    >
+
+                </div>
+
+                <form
+                    id="register-form"
+                    class="auth-form"
+                >
+
+                    <div class="form-group">
+
+                        <label for="ho-ten">
+                            Họ và tên
+                        </label>
+
+                        <input
+                            type="text"
+                            id="ho-ten"
+                            name="ho-ten"
+                            placeholder="Nhập họ và tên"
+                        >
+
+                        <p
+                            id="ho-ten-error"
+                            class="form-error"
+                        ></p>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Nhập email"
+                        >
+
+                        <p
+                            id="email-error"
+                            class="form-error"
+                        ></p>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="so-dien-thoai">
+                            Số điện thoại
+                        </label>
+
+                        <input
+                            type="text"
+                            id="so-dien-thoai"
+                            name="so-dien-thoai"
+                            placeholder="Nhập số điện thoại"
+                        >
+
+                        <p
+                            id="so-dien-thoai-error"
+                            class="form-error"
+                        ></p>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="mat-khau">
+                            Mật khẩu
+                        </label>
+
+                        <input
+                            type="password"
+                            id="mat-khau"
+                            name="mat-khau"
+                            placeholder="Nhập mật khẩu"
+                        >
+
+                        <p
+                            id="mat-khau-error"
+                            class="form-error"
+                        ></p>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="xac-nhan-mat-khau">
+                            Xác nhận mật khẩu
+                        </label>
+
+                        <input
+                            type="password"
+                            id="xac-nhan-mat-khau"
+                            name="xac-nhan-mat-khau"
+                            placeholder="Nhập lại mật khẩu"
+                        >
+
+                        <p
+                            id="xac-nhan-mat-khau-error"
+                            class="form-error"
+                        ></p>
+
+                    </div>
+
+
+                    <p
+                        id="register-message"
+                        class="form-message"
+                    ></p>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary auth-submit"
+                    >
+                        Đăng ký
+                    </button>
+
+                </form>
+
+
+                <div class="auth-footer">
+
+                    <p>
+                        Đã có tài khoản?
+                        <a href="login.html">
+                            Đăng nhập
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../../index.html">
+                            Về trang chủ
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/auth/register.js"></script>
+
+</body>
+
+</html>

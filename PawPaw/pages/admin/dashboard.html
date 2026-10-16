@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPaw - Dashboard Quản Trị</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/admin.css');
+    </style>
+
+    <!-- CSS tùy chỉnh khoảng cách Logo + PawPaw và Layout Dashboard -->
+    <style>
+        /* Thu hẹp khoảng cách giữa Logo hình cún/mèo và chữ PawPaw */
+        .logo, a.logo, .navbar-brand {
+            display: flex !important;
+            align-items: center !important;
+            gap: 6px !important; /* Thu hẹp khoảng cách gần lại */
+        }
+
+        .logo img, a.logo img {
+            margin-right: 2px !important;
+        }
+
+        /* Style cho khối thẻ KPI đồng bộ PawPaw */
+        .kpi-grid-5 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .kpi-card-box {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px 16px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .kpi-card-box .kpi-icon {
+            font-size: 26px;
+            margin-bottom: 4px;
+        }
+
+        .kpi-card-box .kpi-label {
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--purple-gray, #718093);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .kpi-card-box .kpi-value {
+            font-size: 26px;
+            font-weight: 900;
+            color: var(--blue-dark, #2f3640);
+            margin: 6px 0;
+        }
+
+        .kpi-card-box .kpi-sub {
+            font-size: 11px;
+            color: #a4b0be;
+        }
+    </style>
+</head>
+
+<body data-admin-page="dashboard">
+
+    <!-- HEADER ADMIN -->
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <!-- MAIN CONTENT KHUNG HỒNG CHUẨN BOOKING -->
+    <main class="container admin-page-container">
+        <!-- Tiêu đề -->
+        <section class="admin-user-header" style="margin-bottom: 24px;">
+            <h1 class="page-title">Dashboard Thống Kê</h1>
+            <p>Tổng quan hoạt động và dữ liệu hệ thống chăm sóc thú cưng PawPaw.</p>
+        </section>
+
+        <!-- Khối 5 Thẻ Chỉ Số KPI Thống Kê -->
+        <section class="kpi-grid-5">
+            <div class="kpi-card-box">
+                <div class="kpi-icon">👥</div>
+                <div class="kpi-label">Khách Hàng</div>
+                <div class="kpi-value" id="kpi-total-customers">0</div>
+                <div class="kpi-sub">Đã đăng ký</div>
+            </div>
+
+            <div class="kpi-card-box">
+                <div class="kpi-icon">🐾</div>
+                <div class="kpi-label">Thú Cưng</div>
+                <div class="kpi-value" id="kpi-total-pets">0</div>
+                <div class="kpi-sub">Hồ sơ lưu trữ</div>
+            </div>
+
+            <div class="kpi-card-box">
+                <div class="kpi-icon">⏳</div>
+                <div class="kpi-label">Sắp Diễn Ra</div>
+                <div class="kpi-value" style="color: #e67e22;" id="kpi-pending-bookings">0</div>
+                <div class="kpi-sub">Lịch hẹn cần xử lý</div>
+            </div>
+
+            <div class="kpi-card-box">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-label">Doanh Thu</div>
+                <div class="kpi-value" style="color: #44bd32;" id="kpi-total-revenue">0 ₫</div>
+                <div class="kpi-sub">Lịch hoàn thành</div>
+            </div>
+
+            <div class="kpi-card-box">
+                <div class="kpi-icon">⭐</div>
+                <div class="kpi-label">Đánh Giá TB</div>
+                <div class="kpi-value" style="color: #fbc531;" id="kpi-avg-rating">0.0 / 5</div>
+                <div class="kpi-sub">Từ phản hồi khách</div>
+            </div>
+        </section>
+
+        <!-- 4 Biểu đồ thống kê -->
+        <section class="chart-grid">
+            <div class="chart-card">
+                <h3 class="chart-title">📊 Số lịch hẹn theo tháng</h3>
+                <p class="chart-sub">6 tháng gần nhất, chia theo trạng thái</p>
+                <div class="chart-box"><canvas id="chart-bookings-month"></canvas></div>
+            </div>
+
+            <div class="chart-card">
+                <h3 class="chart-title">💰 Doanh thu theo tháng</h3>
+                <p class="chart-sub">Chỉ tính lịch đã hoàn thành (tháng hiện tại chưa trọn tháng)</p>
+                <div class="chart-box"><canvas id="chart-revenue-month"></canvas></div>
+            </div>
+
+            <div class="chart-card">
+                <h3 class="chart-title">🍩 Tỷ lệ trạng thái lịch hẹn</h3>
+                <p class="chart-sub">Tổng hợp trong 6 tháng</p>
+                <div class="chart-box"><canvas id="chart-status-share"></canvas></div>
+            </div>
+
+            <div class="chart-card">
+                <h3 class="chart-title">🏆 Top 5 dịch vụ được đặt nhiều nhất</h3>
+                <p class="chart-sub">Không tính lịch đã huỷ</p>
+                <div class="chart-box"><canvas id="chart-top-services"></canvas></div>
+            </div>
+        </section>
+
+        <!-- Bảng Danh Sách Lịch Hẹn Mới Nhất (Toàn Màn Hình, Bỏ Bảng Thú Cưng) -->
+        <section class="admin-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--blue-light, #f1f2f6);">
+                <h3 style="margin: 0; font-size: 18px; font-weight: 800; color: var(--blue-dark, #2f3640);">📅 Lịch Hẹn Gần Đây</h3>
+                <a href="booking.html" style="color: var(--blue-dark, #2f3640); font-weight: 800; text-decoration: none; font-size: 13px;">Xem tất cả trong Quản Lý Lịch Hẹn &rarr;</a>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table-booking">
+                    <thead>
+                        <tr>
+                            <th>Mã LH</th>
+                            <th>Khách hàng</th>
+                            <th>Số điện thoại</th>
+                            <th>Thời gian</th>
+                            <th>Dịch vụ & Thú cưng</th>
+                            <th>Tổng tiền</th>
+                            <th class="col-center">Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dashboard-booking-tbody">
+                        <tr>
+                            <td colspan="7" style="text-align: center; padding: 25px; color: var(--purple-gray);">Đang tải dữ liệu...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+
+    <!-- UTIL SCRIPTS -->
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+
+    <!-- COMPONENTS -->
+    <script src="../../js/component/header-admin.js"></script>
+    <script src="../../js/component/footer.js"></script>
+
+    <!-- THƯ VIỆN BIỂU ĐỒ (Chart.js, đặt cục bộ để chạy được khi không có mạng) -->
+    <script src="../../js/lib/chart.umd.js"></script>
+
+    <!-- DASHBOARD SCRIPT -->
+    <script src="../../js/admin/dashboard.js"></script>
+
+</body>
+
+</html>

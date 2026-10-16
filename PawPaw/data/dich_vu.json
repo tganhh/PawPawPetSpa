@@ -1,0 +1,222 @@
+[
+  {
+    "ma_dich_vu": "DV01",
+    "nhom_dich_vu": "Tắm và vệ sinh",
+    "ten_dich_vu": "Tắm cơ bản",
+    "mo_ta_chi_tiet": "Tắm, sấy khô và chải lông cơ bản",
+    "gia_duoi_5kg": 120000,
+    "gia_5_15kg": 180000,
+    "gia_tren_15kg": 250000,
+    "thoi_gian_du_kien": 60,
+    "anh_dich_vu": "https://images.pexels.com/photos/6131156/pexels-photo-6131156.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV02",
+    "nhom_dich_vu": "Tắm và vệ sinh",
+    "ten_dich_vu": "Tắm vệ sinh",
+    "mo_ta_chi_tiet": "Tắm, sấy, vệ sinh tai, cắt móng và vệ sinh vùng mắt",
+    "gia_duoi_5kg": 160000,
+    "gia_5_15kg": 230000,
+    "gia_tren_15kg": 320000,
+    "thoi_gian_du_kien": 75,
+    "anh_dich_vu": "https://images.pexels.com/photos/6131156/pexels-photo-6131156.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV03",
+    "nhom_dich_vu": "Cắt tỉa",
+    "ten_dich_vu": "Tắm và cắt tỉa",
+    "mo_ta_chi_tiet": "Tắm, sấy, chải lông và cắt tỉa cơ bản",
+    "gia_duoi_5kg": 250000,
+    "gia_5_15kg": 350000,
+    "gia_tren_15kg": 500000,
+    "thoi_gian_du_kien": 120,
+    "anh_dich_vu": "https://images.pexels.com/photos/12283472/pexels-photo-12283472.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV04",
+    "nhom_dich_vu": "Cắt tỉa",
+    "ten_dich_vu": "Tắm và cạo lông",
+    "mo_ta_chi_tiet": "Tắm, sấy, vệ sinh và cạo lông cơ bản theo yêu cầu",
+    "gia_duoi_5kg": 220000,
+    "gia_5_15kg": 320000,
+    "gia_tren_15kg": 450000,
+    "thoi_gian_du_kien": 120,
+    "anh_dich_vu": "https://images.pexels.com/photos/12283472/pexels-photo-12283472.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV05",
+    "nhom_dich_vu": "Chăm sóc cơ bản",
+    "ten_dich_vu": "Cắt và mài móng",
+    "mo_ta_chi_tiet": "Cắt và mài móng cho thú cưng",
+    "gia_duoi_5kg": 50000,
+    "gia_5_15kg": 70000,
+    "gia_tren_15kg": 90000,
+    "thoi_gian_du_kien": 20,
+    "anh_dich_vu": "https://images.pexels.com/photos/23692686/pexels-photo-23692686.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV06",
+    "nhom_dich_vu": "Chăm sóc cơ bản",
+    "ten_dich_vu": "Vệ sinh tai",
+    "mo_ta_chi_tiet": "Làm sạch tai và vệ sinh khu vực xung quanh",
+    "gia_duoi_5kg": 50000,
+    "gia_5_15kg": 70000,
+    "gia_tren_15kg": 90000,
+    "thoi_gian_du_kien": 20,
+    "anh_dich_vu": "https://images.pexels.com/photos/23692686/pexels-photo-23692686.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV07",
+    "nhom_dich_vu": "Tắm và vệ sinh",
+    "ten_dich_vu": "Tắm trị liệu viêm da thảo dược",
+    "mo_ta_chi_tiet": "Sử dụng dầu tắm dược liệu dịu nhẹ hỗ trợ phục hồi da mẩn đỏ ngứa",
+    "gia_duoi_5kg": 190000,
+    "gia_5_15kg": 270000,
+    "gia_tren_15kg": 370000,
+    "thoi_gian_du_kien": 70,
+    "anh_dich_vu": "https://images.pexels.com/photos/6131156/pexels-photo-6131156.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV08",
+    "nhom_dich_vu": "Tắm và vệ sinh",
+    "ten_dich_vu": "Tắm khử mùi tuyến hôi",
+    "mo_ta_chi_tiet": "Vắt tuyến hôi chuẩn kỹ thuật và tắm khử mùi hôi cơ thể lâu ngày",
+    "gia_duoi_5kg": 180000,
+    "gia_5_15kg": 250000,
+    "gia_tren_15kg": 340000,
+    "thoi_gian_du_kien": 60,
+    "anh_dich_vu": "https://images.pexels.com/photos/6131156/pexels-photo-6131156.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV09",
+    "nhom_dich_vu": "Tắm và vệ sinh",
+    "ten_dich_vu": "Tắm bùn khoáng phục hồi lông",
+    "mo_ta_chi_tiet": "Ủ bùn khoáng tự nhiên giúp lông óng mượt và thải độc da sâu",
+    "gia_duoi_5kg": 240000,
+    "gia_5_15kg": 330000,
+    "gia_tren_15kg": 460000,
+    "thoi_gian_du_kien": 80,
+    "anh_dich_vu": "https://images.pexels.com/photos/6131156/pexels-photo-6131156.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV10",
+    "nhom_dich_vu": "Tắm và vệ sinh",
+    "ten_dich_vu": "Tắm bọt khô nano dịu nhẹ",
+    "mo_ta_chi_tiet": "Liệu trình bọt tắm khô chuyên biệt dành riêng cho mèo sợ nước",
+    "gia_duoi_5kg": 140000,
+    "gia_5_15kg": 200000,
+    "gia_tren_15kg": 280000,
+    "thoi_gian_du_kien": 45,
+    "anh_dich_vu": "https://images.pexels.com/photos/6131156/pexels-photo-6131156.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV11",
+    "nhom_dich_vu": "Cắt tỉa",
+    "ten_dich_vu": "Cắt tỉa lông mặt và tạo kiểu tròn",
+    "mo_ta_chi_tiet": "Tạo hình tròn đầu búp bê gấu Teddy cho Poodle và Bichon",
+    "gia_duoi_5kg": 120000,
+    "gia_5_15kg": 160000,
+    "gia_tren_15kg": 220000,
+    "thoi_gian_du_kien": 45,
+    "anh_dich_vu": "https://images.pexels.com/photos/12283472/pexels-photo-12283472.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV12",
+    "nhom_dich_vu": "Cắt tỉa",
+    "ten_dich_vu": "Cắt tạo kiểu lông theo dáng chuẩn",
+    "mo_ta_chi_tiet": "Thiết kế phom lông thanh thoát, cắt tỉa 4 chân gọn gàng",
+    "gia_duoi_5kg": 280000,
+    "gia_5_15kg": 390000,
+    "gia_tren_15kg": 540000,
+    "thoi_gian_du_kien": 120,
+    "anh_dich_vu": "https://images.pexels.com/photos/12283472/pexels-photo-12283472.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV13",
+    "nhom_dich_vu": "Cắt tỉa",
+    "ten_dich_vu": "Cạo lông bàn chân và vùng vệ sinh",
+    "mo_ta_chi_tiet": "Cạo sạch kẽ đệm chân chống trơn trượt và làm sạch khu vực hậu môn",
+    "gia_duoi_5kg": 60000,
+    "gia_5_15kg": 80000,
+    "gia_tren_15kg": 110000,
+    "thoi_gian_du_kien": 30,
+    "anh_dich_vu": "https://images.pexels.com/photos/12283472/pexels-photo-12283472.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV14",
+    "nhom_dich_vu": "Cắt tỉa",
+    "ten_dich_vu": "Gỡ rối lông chuyên sâu",
+    "mo_ta_chi_tiet": "Xử lý chải bện lông rối nặng mà không làm rát đau da thú cưng",
+    "gia_duoi_5kg": 150000,
+    "gia_5_15kg": 220000,
+    "gia_tren_15kg": 300000,
+    "thoi_gian_du_kien": 60,
+    "anh_dich_vu": "https://images.pexels.com/photos/12283472/pexels-photo-12283472.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV15",
+    "nhom_dich_vu": "Cắt tỉa",
+    "ten_dich_vu": "Cạo lông tạo phom đuôi sư tử",
+    "mo_ta_chi_tiet": "Cạo thân gọn mát, giữ lại lông đầu và chỏm đuôi xinh xắn",
+    "gia_duoi_5kg": 230000,
+    "gia_5_15kg": 310000,
+    "gia_tren_15kg": 430000,
+    "thoi_gian_du_kien": 90,
+    "anh_dich_vu": "https://images.pexels.com/photos/12283472/pexels-photo-12283472.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV16",
+    "nhom_dich_vu": "Chăm sóc cơ bản",
+    "ten_dich_vu": "Vệ sinh răng miệng và xịt thơm",
+    "mo_ta_chi_tiet": "Chải răng với kem enzyme ngừa mảng bám và xịt thơm miệng",
+    "gia_duoi_5kg": 60000,
+    "gia_5_15kg": 80000,
+    "gia_tren_15kg": 100000,
+    "thoi_gian_du_kien": 20,
+    "anh_dich_vu": "https://images.pexels.com/photos/23692686/pexels-photo-23692686.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV17",
+    "nhom_dich_vu": "Chăm sóc cơ bản",
+    "ten_dich_vu": "Dưỡng đệm bàn chân sáp hữu cơ",
+    "mo_ta_chi_tiet": "Thoa sáp dưỡng tự nhiên chống nứt nẻ khô ráp lòng bàn chân",
+    "gia_duoi_5kg": 40000,
+    "gia_5_15kg": 60000,
+    "gia_tren_15kg": 80000,
+    "thoi_gian_du_kien": 15,
+    "anh_dich_vu": "https://images.pexels.com/photos/23692686/pexels-photo-23692686.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV18",
+    "nhom_dich_vu": "Chăm sóc cơ bản",
+    "ten_dich_vu": "Vệ sinh tuyến lệ và rỉ mắt",
+    "mo_ta_chi_tiet": "Vệ sinh sạch vết ố vàng khoé mắt và lau khô kháng khuẩn",
+    "gia_duoi_5kg": 40000,
+    "gia_5_15kg": 60000,
+    "gia_tren_15kg": 80000,
+    "thoi_gian_du_kien": 15,
+    "anh_dich_vu": "https://images.pexels.com/photos/23692686/pexels-photo-23692686.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV19",
+    "nhom_dich_vu": "Chăm sóc cơ bản",
+    "ten_dich_vu": "Xịt dưỡng mượt lông và tinh dầu",
+    "mo_ta_chi_tiet": "Xịt dưỡng ẩm chống tĩnh điện và lưu hương hoa quả tự nhiên",
+    "gia_duoi_5kg": 50000,
+    "gia_5_15kg": 70000,
+    "gia_tren_15kg": 90000,
+    "thoi_gian_du_kien": 15,
+    "anh_dich_vu": "https://images.pexels.com/photos/23692686/pexels-photo-23692686.jpeg"
+  },
+  {
+    "ma_dich_vu": "DV20",
+    "nhom_dich_vu": "Chăm sóc cơ bản",
+    "ten_dich_vu": "Kiểm tra tổng quát và nhỏ ve rận",
+    "mo_ta_chi_tiet": "Kiểm tra tình trạng da tai lông và nhỏ thuốc phòng ký sinh trùng",
+    "gia_duoi_5kg": 90000,
+    "gia_5_15kg": 130000,
+    "gia_tren_15kg": 170000,
+    "thoi_gian_du_kien": 25,
+    "anh_dich_vu": "https://images.pexels.com/photos/23692686/pexels-photo-23692686.jpeg"
+  }
+]

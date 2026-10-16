@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đánh giá - PawPaw</title>
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/admin.css');
+    </style>
+</head>
+<body data-page="review" data-admin-page="review">
+
+    <!-- HEADER ADMIN -->
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <main class="container review-admin-page">
+        <div class="review-admin-header">
+            <h1 class="page-title">Quản Lý Đánh Giá</h1>
+            <p>Xem phản hồi của khách hàng, ẩn hoặc hiện đánh giá trên website</p>
+        </div>
+
+        <!-- BỘ LỌC -->
+        <div class="review-filter-bar">
+            <div class="review-filter-group">
+                <label for="filter-star">Số sao</label>
+                <select id="filter-star">
+                    <option value="all">Tất cả</option>
+                    <option value="5">5 sao</option>
+                    <option value="4">4 sao</option>
+                    <option value="3">3 sao</option>
+                    <option value="2">2 sao</option>
+                    <option value="1">1 sao</option>
+                </select>
+            </div>
+
+            <div class="review-filter-group">
+                <label for="filter-visibility">Trạng thái hiển thị</label>
+                <select id="filter-visibility">
+                    <option value="all">Tất cả</option>
+                    <option value="hien_thi">Đang hiện</option>
+                    <option value="an">Đã ẩn</option>
+                </select>
+            </div>
+
+            <div class="review-filter-group">
+                <label for="sort-time">Sắp xếp theo thời gian</label>
+                <select id="sort-time">
+                    <option value="newest">Mới nhất trước</option>
+                    <option value="oldest">Cũ nhất trước</option>
+                </select>
+            </div>
+
+            <button type="button" id="btn-reset-filter" class="btn btn-secondary btn-sm">Đặt lại</button>
+        </div>
+
+        <div class="review-summary">
+            <span id="result-count"></span>
+        </div>
+
+        <!-- BẢNG ĐÁNH GIÁ (render bằng review-mnm.js) -->
+        <div class="review-table-wrap">
+            <table class="review-table">
+                <thead>
+                    <tr>
+                        <th>Mã ĐG</th>
+                        <th>Khách hàng</th>
+                        <th>Dịch vụ</th>
+                        <th>Số sao</th>
+                        <th>Nội dung</th>
+                        <th>Thời gian</th>
+                        <th>Hiển thị</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="review-table-body"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- MODAL: CHI TIẾT ĐÁNH GIÁ -->
+    <div id="review-detail-modal" class="review-modal" hidden>
+        <div class="review-modal-box">
+            <div class="review-modal-title">Chi tiết đánh giá</div>
+            <div id="review-detail-body"></div>
+            <div class="review-modal-footer">
+                <button type="button" id="btn-detail-toggle" class="btn btn-danger"></button>
+                <button type="button" id="btn-detail-close" class="btn btn-secondary">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer"></footer>
+
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/auth/auth-guard.js"></script>
+    <script src="../../js/component/header-admin.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <script src="../../js/admin/review-mnm.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPaw - Bộ lọc dịch vụ</title>
+
+    <style>
+        @import url('../../style.css');
+        @import url('../../css/customer.css');
+        @import url('../../css/chatbot.css');
+    </style>
+</head>
+
+<body data-page="service">
+
+    <header class="header">
+        <nav class="container navbar"></nav>
+    </header>
+
+    <main class="container service-filter-page">
+
+        <section class="service-header">
+            <h1 class="page-title">Bộ lọc dịch vụ</h1>
+            <p class="page-text">
+                Tìm dịch vụ phù hợp với nhu cầu chăm sóc thú cưng của bạn.
+            </p>
+        </section>
+
+        <section class="service-filter-box">
+
+            <div class="service-filter-grid">
+
+                <div class="service-filter-item">
+                    <label for="filter-group">Nhóm dịch vụ</label>
+                    <select id="filter-group">
+                        <option value="">Tất cả nhóm dịch vụ</option>
+                    </select>
+                </div>
+
+                <div class="service-filter-item">
+                    <label for="filter-weight">Cân nặng thú cưng</label>
+                    <select id="filter-weight">
+                        <option value="">Tất cả cân nặng</option>
+                        <option value="under-5">Dưới 5 kg</option>
+                        <option value="5-15">5 - 15 kg</option>
+                        <option value="over-15">Trên 15 kg</option>
+                    </select>
+                </div>
+
+                <div class="service-filter-item">
+                    <label for="filter-price">Khoảng giá</label>
+                    <select id="filter-price">
+                        <option value="">Tất cả mức giá</option>
+                        <option value="under-100">Dưới 100.000 đ</option>
+                        <option value="100-200">100.000 - 200.000 đ</option>
+                        <option value="200-500">Trên 200.000 - 500.000 đ</option>
+                        <option value="over-500">Trên 500.000 đ</option>
+                    </select>
+                </div>
+
+                <div class="service-filter-item">
+                    <label for="filter-duration">Thời gian dự kiến</label>
+                    <select id="filter-duration">
+                        <option value="">Tất cả thời gian</option>
+                        <option value="under-30">Dưới 30 phút</option>
+                        <option value="30-60">30 - 60 phút</option>
+                        <option value="60-120">Trên 60 - 120 phút</option>
+                        <option value="over-120">Trên 120 phút</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="service-filter-search">
+                <label for="filter-search-input">Tìm kiếm dịch vụ</label>
+                <input
+                    type="text"
+                    id="filter-search-input"
+                    placeholder="Nhập tên dịch vụ..."
+                    autocomplete="off">
+            </div>
+
+            <div class="service-filter-actions">
+                <button type="button" id="apply-filter" class="btn btn-primary">Áp dụng bộ lọc</button>
+                <button type="button" id="reset-filter" class="btn btn-secondary">Đặt lại</button>
+                <a href="service.html" class="btn btn-secondary">Quay lại</a>
+            </div>
+
+        </section>
+
+        <!-- Kết quả lọc -->
+        <section class="service-list-section">
+            <div id="filtered-service-list" class="service-list"></div>
+
+            <p id="filtered-service-empty" class="service-empty">
+                Không tìm thấy dịch vụ phù hợp.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="../../js/util/constants.js"></script>
+    <script src="../../js/util/storage.js"></script>
+    <script src="../../js/util/common.js"></script>
+    <script src="../../js/component/header.js"></script>
+    <script src="../../js/component/footer.js"></script>
+    <script src="../../js/customer/service.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/component/chatbot.js"></script>
+
+</body>
+
+</html>
